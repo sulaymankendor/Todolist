@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock head %}
+    <title>{% block title%}{% endblock title%}</title>
+</head>
+<body style="position: relative;">
+	<div class="dark" style="background-color: black; position: fixed; top:0;left:0; right: 0; bottom: 0; z-index: 1; opacity: 0.8; display: none;
+	"></div>
+{% block content %}
+{% endblock content %} 
+<script  src="{% static 'js/jquery-3.6.3.js' %}"></script>
+<script  src="{% static 'js/todo823t.js' %}"></script>  
+</body>
+</html>
